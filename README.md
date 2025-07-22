@@ -68,7 +68,7 @@ Detects diseases from uploaded plant leaf images using CNN models and suggests r
 
 - FastAPI backend with ML/DL models.
 - Simple HTML/CSS/JS frontend.
-- Deployed on **Render**: [https://kisan-mitra-9fzk.onrender.com](https://kisan-mitra-9fzk.onrender.com)
+- Deployed on **Render**: [https://kisan-mitra-9fzk.onrender.com](https://kisan-mitra-x2wr.onrender.com)
 - API endpoints tested via Postman.
 
 ---

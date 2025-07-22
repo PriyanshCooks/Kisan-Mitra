@@ -103,9 +103,9 @@ Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 | Feature             | Preview                                                                                     |
 |---------------------|---------------------------------------------------------------------------------------------|
-| Crop Recommendation  | <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/crop_gif.gif" width="200"/>   |
-| Fertilizer Suggestion| <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/fertilizer%20gif.gif" width="200"/> |
-| Disease Detection    | <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/crop_disease_gif.gif" width="200"/>  |
+| Crop Recommendation    | <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/crop_gif.gif"/> |
+| Fertilizer Suggestion  | <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/fertilizer%20gif.gif"/> |
+| Disease Detection      | <img src="https://raw.githubusercontent.com/PriyanshCooks/Kisan-Mitra/67fcfc8326cd1cfa2fda6d019b811bf1c7a3170c/assets/gifs/crop_disease_gif.gif"/> |
 
 
 ---

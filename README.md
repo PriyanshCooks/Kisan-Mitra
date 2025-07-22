@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-brightgreen)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red)
-![Heroku](https://img.shields.io/badge/Deployed-Heroku-purple)
+![Render](https://img.shields.io/badge/Deployed-Render-blueviolet)
 
 A complete AI and ML-based web application that helps farmers with **Crop Recommendation**, **Fertilizer Suggestion**, and **Plant Disease Detection** — all in one simple-to-use platform.
 
@@ -59,7 +59,7 @@ Detects diseases from uploaded plant leaf images using CNN models and suggests r
 | **Backend** | Python, FastAPI, scikit-learn, TensorFlow/Keras, OpenCV |
 | **Frontend** | HTML, CSS, JavaScript |
 | **Database** | CSV files, PostgreSQL (optional) |
-| **Deployment** | Heroku / AWS EC2 / Render |
+| **Deployment** | Render, Heroku / AWS EC2 (optional) |
 | **Utilities** | pandas, NumPy, matplotlib, seaborn, Postman |
 
 ---
@@ -68,7 +68,7 @@ Detects diseases from uploaded plant leaf images using CNN models and suggests r
 
 - FastAPI backend with ML/DL models.
 - Simple HTML/CSS/JS frontend.
-- Deployment-ready on Heroku/AWS.
+- Deployed on **Render**: [https://kisan-mitra-9fzk.onrender.com](https://kisan-mitra-9fzk.onrender.com)
 - API endpoints tested via Postman.
 
 ---

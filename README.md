@@ -103,9 +103,10 @@ Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 | Feature             | Preview                                                                                     |
 |---------------------|---------------------------------------------------------------------------------------------|
-| Crop Recommendation  | ![Crop Demo](https://i.ibb.co/C33PyCmZ/crop-gif.gif)   |
-| Fertilizer Suggestion| ![Fertilizer Demo](https://i.ibb.co/fz0DZDpJ/fertilizer-gif.gif) |
-| Disease Detection    | ![Disease Demo](https://i.ibb.co/ppL8FT0/crop-disease-gif.gif)  |
+| Crop Recommendation  | <img src="https://i.ibb.co/C33PyCmZ/crop-gif.gif" width="200"/>   |
+| Fertilizer Suggestion| <img src="https://i.ibb.co/fz0DZDpJ/fertilizer-gif.gif" width="200"/> |
+| Disease Detection    | <img src="https://i.ibb.co/ppL8FT0/crop-disease-gif.gif" width="200"/>  |
+
 
 ---
 

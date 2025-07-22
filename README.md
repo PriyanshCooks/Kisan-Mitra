@@ -132,8 +132,8 @@ Licensed under **MIT License** – See [LICENSE](LICENSE).
 
 ## 📞 CONTACT
 
-- 📧 Email: your-email@example.com
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- ⭐ GitHub: [Your GitHub](https://github.com/your-username)
+- 📧 Email: priyanshbhatt164@gmail.com
+- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/priyansh-bhatt09)
+- ⭐ GitHub: [Your GitHub](https://github.com/Priyansh_Cooks)
 
 ---

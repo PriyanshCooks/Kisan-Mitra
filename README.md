@@ -1,160 +1,139 @@
-🌾 KISAN MITRA – AI Powered Farming Assistant
+# 🌾 KISAN MITRA – AI Powered Farming Assistant
 
-A complete AI and ML-based web application designed to help farmers with Crop Recommendation, Fertilizer Suggestion, and Plant Disease Detection — all in one platform.
+![Python](https://img.shields.io/badge/Python-3.8-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-brightgreen)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red)
+![Heroku](https://img.shields.io/badge/Deployed-Heroku-purple)
 
-🚨 DISCLAIMER ⚠️
+A complete AI and ML-based web application that helps farmers with **Crop Recommendation**, **Fertilizer Suggestion**, and **Plant Disease Detection** — all in one simple-to-use platform.
 
-This project is developed as a Proof of Concept (POC) for educational purposes. The data sources used are publicly available datasets and may not be suitable for critical agricultural decisions without further validation. This project demonstrates the potential of AI in precision agriculture when scaled with verified datasets and real-world inputs.
+---
 
-💡 MOTIVATION
+## 🚨 DISCLAIMER ⚠️
 
-Agriculture plays a pivotal role in economies like India, where millions of livelihoods depend on it. With rising challenges like climate change and soil degradation, AI can empower farmers to make smarter, data-driven decisions to maximize yield and reduce losses.
+This project is a **Proof of Concept (POC)** built for educational purposes. Data used is from public sources and should not be used for actual farming decisions without proper validation. It showcases how AI can be leveraged for **precision agriculture** at scale.
 
-Kisan Mitra brings together:
+---
 
-📊 Crop Recommendation based on soil nutrient data.
+## 💡 MOTIVATION
 
-💡 Fertilizer Suggestion tailored to crop and soil health.
+Agriculture supports millions of livelihoods, especially in India. This project empowers farmers by:
+- 📊 **Recommending the most suitable crops** based on soil and climate data.
+- 💡 **Suggesting fertilizers** to improve soil health.
+- 🌱 **Detecting plant diseases** from leaf images using Deep Learning.
 
-🌱 Disease Detection using AI-powered image classification from plant leaves.
+---
 
-📊 DATA SOURCES
+## 📊 DATA SOURCES
 
-Crop Recommendation Dataset (Kaggle)
+- [Crop Recommendation Dataset](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset)
+- [Fertilizer Dataset (custom)](link-if-applicable)
+- [Plant Disease Dataset (PlantVillage)](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
 
-Fertilizer Suggestion Dataset (custom built)
+---
 
-Plant Disease Dataset (PlantVillage)
+## 📌 FEATURES
 
-📌 FEATURES
+### ✅ Crop Recommendation
+Predicts suitable crops based on soil nutrients (N, P, K), pH, rainfall, temperature, and humidity.
 
-✅ Crop Recommendation System
+### ✅ Fertilizer Suggestion
+Recommends fertilizers based on nutrient deficiencies or excesses in soil for a given crop.
 
-Predicts the most suitable crop to grow based on soil nutrient values (N, P, K), temperature, humidity, pH, and rainfall.
+### ✅ Disease Detection
+Detects diseases from uploaded plant leaf images using CNN models and suggests remedies.
 
-✅ Fertilizer Suggestion System
+<details>
+<summary>Supported Crops for Disease Detection</summary>
 
-Recommends fertilizers by identifying nutrient deficiencies or excesses in the soil relative to the chosen crop.
+- Apple, Blueberry, Cherry, Corn, Grape, Peach, Pepper, Potato, Soybean, Strawberry, Tomato
 
-✅ Disease Detection System
+</details>
 
-Detects plant diseases from leaf images using Deep Learning (CNN) and provides diagnosis along with remedies.
+---
 
-🛠️ TECH STACK
+## 🛠️ TECH STACK
 
-Category
+| Category | Tools & Technologies |
+|-----------|-----------------------|
+| **Backend** | Python, FastAPI, scikit-learn, TensorFlow/Keras, OpenCV |
+| **Frontend** | HTML, CSS, JavaScript |
+| **Database** | CSV files, PostgreSQL (optional) |
+| **Deployment** | Heroku / AWS EC2 / Render |
+| **Utilities** | pandas, NumPy, matplotlib, seaborn, Postman |
 
-Tools & Technologies
+---
 
-Backend
+## 🚀 DEPLOYMENT
 
-Python, FastAPI, Machine Learning (scikit-learn), Deep Learning (TensorFlow/Keras), OpenCV
+- FastAPI backend with ML/DL models.
+- Simple HTML/CSS/JS frontend.
+- Deployment-ready on Heroku/AWS.
+- API endpoints tested via Postman.
 
-Frontend
+---
 
-HTML, CSS, JavaScript
+## 🖥️ LOCAL SETUP GUIDE
 
-Databases
+### Prerequisites:
+- [Git](https://git-scm.com/), [Python 3.8+](https://www.python.org/), [pip](https://pip.pypa.io/en/stable/)
 
-PostgreSQL (optional), CSV-based lookup for quick data access
-
-Deployment
-
-Heroku / AWS EC2 (or as applicable), Git for version control
-
-Others
-
-Jupyter Notebook, pandas, NumPy, matplotlib, seaborn
-
-🚀 DEPLOYMENT
-
-Backend served using FastAPI with integrated ML/DL models.
-
-Frontend built with simple HTML/CSS/JS for farmer-friendly usability.
-
-Cloud deployment via Heroku/AWS/Render (customizable).
-
-API endpoints tested via Postman.
-
-🖥️ HOW TO RUN LOCALLY
-
-Prerequisites
-
-Git, Python 3.8+, pip
-
-Clone the Repository
-
+### Setup Steps:
+```bash
 git clone https://github.com/your-username/Kisan-Mitra.git
 cd Kisan-Mitra
-
-Create Virtual Environment & Install Requirements
-
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
-Run Backend Server
-
 uvicorn app:app --reload
+```
+Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Access Web Application
+---
 
-Open your browser at:
+## 💻 USAGE
 
-http://127.0.0.1:8000/
+- ✅ **Crop Recommendation**: Input N, P, K, pH, rainfall, temperature, humidity → get best crop.
+- ✅ **Fertilizer Suggestion**: Input soil data + crop → get fertilizer advice.
+- ✅ **Disease Detection**: Upload plant leaf image → get diagnosis and remedy.
 
-💻 USAGE GUIDE
+---
 
-✅ Crop Recommendation: Enter soil N, P, K values, pH, rainfall, temperature, humidity → get best crop.
+## 🌐 DEMO (OPTIONAL GIFS)
 
-✅ Fertilizer Suggestion: Enter soil N, P, K values and selected crop → get fertilizer recommendations.
+| Feature | Preview |
+|----------|---------|
+| Crop Recommendation | _Add GIF/Link here_ |
+| Fertilizer Suggestion | _Add GIF/Link here_ |
+| Disease Detection | _Add GIF/Link here_ |
 
-✅ Disease Detection: Upload a plant leaf image → AI predicts disease type and suggests remedies.
+---
 
-🌍 DEMO PREVIEWS
+## ✅ FUTURE SCOPE
 
-Feature
+- Larger datasets for regional accuracy
+- Multi-language support
+- Real-time weather API integration
+- Mobile-responsive design
 
-Preview
+---
 
-Crop Recommendation
+## 🤝 CONTRIBUTIONS
 
+Pull requests are welcome. For significant changes, open an issue first to discuss ideas.
 
+---
 
-Fertilizer Suggestion
+## 📜 LICENSE
 
+Licensed under **MIT License** – See [LICENSE](LICENSE).
 
+---
 
-Disease Detection
+## 📞 CONTACT
 
+- 📧 Email: your-email@example.com
+- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+- ⭐ GitHub: [Your GitHub](https://github.com/your-username)
 
-
-✅ FURTHER IMPROVEMENTS
-
-Improve disease detection with larger and diverse datasets.
-
-Enhance frontend design for better usability.
-
-Add support for multiple regional languages.
-
-Integrate real-time weather APIs for more accurate predictions.
-
-Add mobile responsiveness.
-
-🤝 CONTRIBUTING
-
-Pull requests are welcome! For major changes, open an issue first to discuss what you would like to change. Contributions are highly appreciated.
-
-📜 LICENSE
-
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-📞 CONTACT
-
-For queries, collaboration, or contributions, feel free to reach out via:
-
-📧 Email: your-email@example.com
-
-💼 LinkedIn: Your LinkedIn
-
-⭐ GitHub: Your GitHub
+---

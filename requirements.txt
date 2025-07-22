@@ -74,9 +74,6 @@ terminado
 testpath
 threadpoolctl
 toml
-torch>=2.3.0+cpu
-torchaudio>=2.3.0+cpu
-torchvision>=0.18.0+cpu
 tornado
 traitlets
 typing-extensions

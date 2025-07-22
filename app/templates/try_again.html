@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- Container for error message with centered layout -->
+<div class="container py-2 mx-auto text-center" style="margin: 9rem;">
+  <div class="row">
+    <div class="col-sm py-2 py-md-3">
+      <!-- Card for error message display -->
+      <div class="card card-body" style="justify-content: center; background-color: blanchedalmond;">
+        <h1 class="text-center" style="color: black; font-size: 20px;">
+          <b>Sorry, we couldn't process your request. <br>Please try again.</b>
+        </h1>
+        <!-- Button to redirect to home page -->
+        <a href="{{ url_for('home') }}">
+          <button type="submit" class="btn btn-info text-center" style="color: black; font-weight: bold; margin: 1rem;">
+            Try Again
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

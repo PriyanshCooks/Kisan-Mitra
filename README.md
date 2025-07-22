@@ -133,7 +133,7 @@ Licensed under **MIT License** – See [LICENSE](LICENSE).
 ## 📞 CONTACT
 
 - 📧 Email: priyanshbhatt164@gmail.com
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/priyansh-bhatt09)
-- ⭐ GitHub: [Your GitHub](https://github.com/Priyansh_Cooks)
+- 💼 LinkedIn: [Priyansh's LinkedIn](https://linkedin.com/in/priyansh-bhatt09)
+- ⭐ GitHub: [Priyansh's GitHub](https://github.com/Priyansh_Cooks)
 
 ---

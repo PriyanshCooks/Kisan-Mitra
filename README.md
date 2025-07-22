@@ -101,14 +101,11 @@ Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## 🌐 DEMO (OPTIONAL GIFS)
 
-## 🌐 DEMO (OPTIONAL GIFS)
-
 | Feature             | Preview                                                                                     |
 |---------------------|---------------------------------------------------------------------------------------------|
-| Crop Recommendation  | ![Crop Demo](https://drive.google.com/uc?export=view&id=1xq-KJ5pBBF-JT9GcPxN1HJOwPsq_e6ER)   |
-| Fertilizer Suggestion| ![Fertilizer Demo](https://drive.google.com/uc?export=view&id=17Vhp7gqWN-8GrHY_04l485uTIFrqg2iS) |
-| Disease Detection    | ![Disease Demo](https://drive.google.com/uc?export=view&id=1xq-KJ5pBBF-JT9GcPxN1HJOwPsq_e6ER)  |
-
+| Crop Recommendation  | ![Crop Demo](https://ibb.co/jPPJY0b2)   |
+| Fertilizer Suggestion| ![Fertilizer Demo](https://ibb.co/v6zXfXP9) |
+| Disease Detection    | ![Disease Demo](https://ibb.co/4xVGrLm)  |
 
 ---
 

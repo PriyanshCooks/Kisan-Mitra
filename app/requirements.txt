@@ -1,6 +1,6 @@
 flask
 gunicorn
-torch==2.2.2+cpu -f https://download.pytorch.org/whl/torch_stable.html
+torch==2.5.0
 torchvision
 numpy
 pandas

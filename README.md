@@ -91,6 +91,19 @@ Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
+## 🔬 REAL-WORLD EVALUATION
+
+The disease model reaches 99.2% validation accuracy, but validation and test images come from the same PlantVillage source as the training data. To check real-world behaviour it was scored on 215 in-field photos from the PlantDoc test split (25 matching classes, 4-12 images each; CC-BY-4.0, see `real_images/SOURCES.md`).
+
+| Preprocessing | Exact label | Right crop | Avg confidence when wrong | Wrong with >=90% confidence |
+|---|---|---|---|---|
+| app (Resize 256, original app.py) | 27/212 (13%) | 31% | 76% | 67/185 |
+| square (Resize 256x256) | 20/215 (9%) | 23% | 73% | 54/195 |
+
+Takeaways: accuracy drops sharply on field photos, and the model is often confident when wrong, so its confidence should not be treated as reliability. The numbers above were measured before two input-handling crashes in `predict_image` (non-RGB images and non-square images) were fixed.
+
+Details, confusion table and example images: [notebooks/real_world_eval.ipynb](notebooks/real_world_eval.ipynb). Reproduce with `python real_world_eval.py` from the repo root.
+
 ## 💻 USAGE
 
 - ✅ **Crop Recommendation**: Input N, P, K, pH, rainfall, temperature, humidity → get best crop.

@@ -81,10 +81,10 @@ def predict_image(img, model=disease_model):
         str: Predicted disease label.
     """
     transform = transforms.Compose([
-        transforms.Resize(256),
+        transforms.Resize((256, 256)),
         transforms.ToTensor(),
     ])
-    image = Image.open(io.BytesIO(img))
+    image = Image.open(io.BytesIO(img)).convert("RGB")
     img_t = transform(image)
     img_u = torch.unsqueeze(img_t, 0)
     yb = model(img_u)

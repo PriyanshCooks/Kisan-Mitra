@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Agro Harvest, Bootstrap Web Templates, Responsive Web Design, Smartphone Compatible">
+  <title>{{ title }}</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&subset=latin-ext,thai,vietnamese"
+    rel="stylesheet">
+
+  <!-- Responsive font sizing -->
+  <style>
+    html {
+      font-size: 1rem;
+    }
+
+    @media (min-width: 576px) {
+      html {
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      html {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      html {
+        font-size: 1.75rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      html {
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    header {
+      background-color: rgba(30, 30, 30, 1);
+      margin-top: 0;
+    }
+  </style>
+
+  <!-- JavaScript files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+
+  <!-- Hide URL bar on mobile devices -->
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: transparent;">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" style="width: 90px; height: 55px" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('home') }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('crop_recommend') }}">Crop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('fertilizer_recommendation') }}">Fertilizer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('disease_prediction') }}">Disease</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content block -->
+  {% block body %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="text-center py-5">
+    <div class="container py-md-3">
+      <!-- Footer logo -->
+      <h2 class="logo2 text-center">
+        <a href="{{ url_for('home') }}">KisanMitra</a>
+      </h2>
+      <!-- Footer text -->
+      <div class="w3l-copy text-center mt-4">
+        <p>Revolutionizing Agriculture with AI.</p>
+        <p>© Priyansh_Cooks</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Move-to-top icon -->
+  <a href="#home" class="move-top text-center"></a>
+</body>
+
+</html>

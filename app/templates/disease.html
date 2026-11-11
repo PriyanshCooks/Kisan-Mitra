@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- Set background color for the page -->
+<style>
+  body {
+    background-color: rgb(250, 246, 233);
+  }
+</style>
+
+<!-- Plant Disease Prediction Form Section -->
+<section class="form-section py-5">
+  <div class="container text-center">
+    <h2 class="mb-4" style="color: black;"><b>Find Out Which Disease Your Plant Has</b></h2>
+    <div class="form-container" style="width: 350px; margin: 0 auto; border-radius: 25px; padding: 10px; font-weight: bold;">
+      <form class="form-signin" method="POST" enctype="multipart/form-data">
+        <!-- File upload for plant image -->
+        <h3 class="h4 mb-3"><b>Please Upload the Image</b></h3>
+        <input
+          type="file"
+          name="file"
+          class="form-control-file"
+          id="inputfile"
+          onchange="preview_image(event)"
+          style="font-weight: bold;"
+          required
+        >
+        <!-- Image preview -->
+        <img id="output-image" class="rounded mx-auto d-block mt-3" alt="Uploaded plant image">
+        <!-- Submit button -->
+        <button
+          class="btn btn-lg btn-primary btn-block mt-3"
+          type="submit"
+          style="font-weight: bold;"
+        >
+          Predict
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for image preview -->
+<script>
+  function preview_image(event) {
+    const reader = new FileReader();
+    reader.onload = function() {
+      const output = document.getElementById('output-image');
+      output.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+{% endblock %}

@@ -81,7 +81,7 @@ def predict_image(img, model=disease_model):
         str: Predicted disease label.
     """
     transform = transforms.Compose([
-        transforms.Resize(256),
+        transforms.Resize((256, 256)),
         transforms.ToTensor(),
     ])
     image = Image.open(io.BytesIO(img)).convert("RGB")
